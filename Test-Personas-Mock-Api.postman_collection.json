@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "7e817e7c-21a8-48a4-b7a0-0b3c6303462f",
+		"name": "Test-Personas-Mock-Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://60d102107de0b20017109f5a.mockapi.io/api/v1/Personas",
+					"protocol": "https",
+					"host": [
+						"60d102107de0b20017109f5a",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Personas-ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://60d102107de0b20017109f5a.mockapi.io/api/v1/Personas/6",
+					"protocol": "https",
+					"host": [
+						"60d102107de0b20017109f5a",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Personas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nueva-Persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"Pepe\",\r\n    \"Apellido\": \"Sapo\",\r\n    \"Telefono\": 123456,\r\n    \"Email\": \"pepe@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://60d102107de0b20017109f5a.mockapi.io/api/v1/Personas",
+					"protocol": "https",
+					"host": [
+						"60d102107de0b20017109f5a",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar-Persona",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"Pepe\",\r\n    \"Apellido\": \"Sapote\",\r\n    \"Telefono\": 123456,\r\n    \"Email\": \"pepe@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://60d102107de0b20017109f5a.mockapi.io/api/v1/Personas/6",
+					"protocol": "https",
+					"host": [
+						"60d102107de0b20017109f5a",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Personas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar-Persona",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://60d102107de0b20017109f5a.mockapi.io/api/v1/Personas/6",
+					"protocol": "https",
+					"host": [
+						"60d102107de0b20017109f5a",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Personas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
